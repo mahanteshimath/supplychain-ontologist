@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Arbiter Supply Chain Ontology and Governed Conversational Analytics System Architecture</title>
+  <desc id="desc">Technical architecture showing React frontend, FastAPI backend, governed agents, PostgreSQL, Snowflake data layers, Cortex Analyst, source datasets, and audit observability.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070d1d"/><stop offset="0.55" stop-color="#10142b"/><stop offset="1" stop-color="#061c29"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#58f6ed"/><stop offset="1" stop-color="#37a9ff"/></linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e58cff"/><stop offset="1" stop-color="#7b61ff"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70ffd0"/><stop offset="1" stop-color="#20a875"/></linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffcf7b"/><stop offset="1" stop-color="#e5764d"/></linearGradient>
+    <filter id="glowCyan"><feGaussianBlur stdDeviation="7" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowViolet"><feGaussianBlur stdDeviation="7" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#6a8ca4" stroke-opacity=".10" stroke-width="1"/></pattern>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#55e8ef"/></marker>
+    <marker id="arrowViolet" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#d882ff"/></marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6dffc5"/></marker>
+    <style>
+      .label{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#eef6ff}.muted{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#9eafc7}.tiny{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#92a8bd;font-size:13px;letter-spacing:1px}.box{stroke-width:2}.node-title{font-family:Inter,Segoe UI,Arial,sans-serif;font-size:21px;font-weight:700;fill:#f5f8ff}.node-body{font-family:Inter,Segoe UI,Arial,sans-serif;font-size:15px;fill:#c0cadb}.section{font-family:Inter,Segoe UI,Arial,sans-serif;font-size:14px;font-weight:700;letter-spacing:2px;fill:#91a8bf}.pill{font-family:Inter,Segoe UI,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <circle cx="1410" cy="90" r="260" fill="#263f75" opacity=".10"/><circle cx="120" cy="870" r="250" fill="#1d8f86" opacity=".08"/>
+
+  <text x="70" y="70" class="label" font-size="35" font-weight="700">Arbiter Supply Chain Ontology</text>
+  <text x="70" y="110" fill="url(#cyan)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Governed Conversational Analytics - System Architecture</text>
+  <text x="70" y="143" class="muted" font-size="15">React + FastAPI + PostgreSQL + Snowflake Semantic Views + Cortex Analyst + Governed Multi-Agent Runtime</text>
+
+  <text x="70" y="205" class="section">EXPERIENCE</text>
+  <rect x="70" y="225" width="280" height="145" rx="12" fill="#151a35" stroke="url(#violet)" class="box" filter="url(#glowViolet)"/>
+  <circle cx="112" cy="270" r="26" fill="#1f2450" stroke="#d789ff" stroke-width="2"/><text x="99" y="282" fill="#73f2eb" font-size="29" font-weight="700">A</text>
+  <text x="155" y="264" class="node-title">React Frontend</text><text x="155" y="291" class="node-body">Vite + TypeScript</text><text x="93" y="330" class="node-body">Chat workspace, persona context,</text><text x="93" y="352" class="node-body">metric definition, evidence and SQL</text>
+
+  <text x="410" y="205" class="section">APPLICATION API</text>
+  <rect x="410" y="225" width="310" height="145" rx="12" fill="#101d35" stroke="url(#cyan)" class="box" filter="url(#glowCyan)"/>
+  <circle cx="452" cy="270" r="26" fill="#133d54" stroke="#55e8ef" stroke-width="2"/><path d="M440 270h24M452 258v24" stroke="#72fff1" stroke-width="3"/>
+  <text x="495" y="264" class="node-title">FastAPI Backend</text><text x="495" y="291" class="node-body">Typed REST API + auth boundary</text><text x="433" y="330" class="node-body">/health  /api/ask  /api/traces</text><text x="433" y="352" class="node-body">Pydantic contracts, CORS, trace IDs</text>
+
+  <text x="780" y="205" class="section">GOVERNED AGENT RUNTIME</text>
+  <rect x="780" y="225" width="400" height="430" rx="14" fill="#121c2f" stroke="url(#green)" class="box" filter="url(#glowCyan)"/>
+  <text x="810" y="263" class="node-title">Multi-Agent Orchestrator</text><text x="810" y="288" class="node-body">Typed artifacts, deterministic routing, no raw-table escape</text>
+  <rect x="810" y="310" width="160" height="56" rx="8" fill="#172941" stroke="#56f0dd"/><text x="832" y="345" class="node-body">Intent Agent</text>
+  <rect x="990" y="310" width="160" height="56" rx="8" fill="#172941" stroke="#56f0dd"/><text x="1007" y="345" class="node-body">Entity Agent</text>
+  <rect x="810" y="385" width="160" height="56" rx="8" fill="#211b42" stroke="#d783ff"/><text x="822" y="420" class="node-body">Metric Binding</text>
+  <rect x="990" y="385" width="160" height="56" rx="8" fill="#211b42" stroke="#d783ff"/><text x="1007" y="420" class="node-body">Time / FX Policy</text>
+  <rect x="810" y="460" width="160" height="56" rx="8" fill="#183a35" stroke="#6dffc5"/><text x="826" y="495" class="node-body">Join-Path Agent</text>
+  <rect x="990" y="460" width="160" height="56" rx="8" fill="#183a35" stroke="#6dffc5"/><text x="1014" y="495" class="node-body">Validation</text>
+  <rect x="810" y="535" width="160" height="56" rx="8" fill="#3c2b25" stroke="#ffbf71"/><text x="820" y="570" class="node-body">Evidence + Explain</text>
+  <rect x="990" y="535" width="160" height="56" rx="8" fill="#3c2b25" stroke="#ffbf71"/><text x="1012" y="570" class="node-body">Policy + Audit</text>
+  <path d="M970 338H990M890 366V385M1070 366V385M970 413H990M890 441V460M1070 441V460M970 488H990M890 516V535M1070 516V535" fill="none" stroke="#6dffc5" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <text x="1240" y="205" class="section">MODEL AND ANALYTICS SERVICES</text>
+  <rect x="1240" y="225" width="290" height="145" rx="12" fill="#25183c" stroke="url(#violet)" class="box"/>
+  <text x="1270" y="264" class="node-title">Cortex Analyst</text><text x="1270" y="292" class="node-body">Semantic-model NL-to-SQL</text><text x="1263" y="330" class="node-body">Only receives approved metrics,</text><text x="1263" y="352" class="node-body">synonyms, dimensions and views</text>
+  <rect x="1240" y="395" width="290" height="145" rx="12" fill="#182c3b" stroke="url(#cyan)" class="box"/>
+  <text x="1270" y="434" class="node-title">LLM / Embedding APIs</text><text x="1270" y="462" class="node-body">Intent interpretation and entity</text><text x="1270" y="484" class="node-body">matching only; no metric authority</text><text x="1263" y="516" class="tiny">MODEL PROVIDER AGNOSTIC</text>
+  <rect x="1240" y="565" width="290" height="90" rx="12" fill="#1f263d" stroke="#8392aa" class="box"/><text x="1270" y="603" class="node-title">Observability</text><text x="1270" y="629" class="node-body">OpenTelemetry / Langfuse-ready traces</text>
+
+  <text x="70" y="430" class="section">APPLICATION DATA</text>
+  <rect x="70" y="450" width="280" height="150" rx="12" fill="#152032" stroke="#6c8eac" class="box"/>
+  <text x="100" y="490" class="node-title">PostgreSQL</text><text x="100" y="518" class="node-body">App metadata and state</text><text x="100" y="550" class="node-body">Metric cache | entity mappings</text><text x="100" y="574" class="node-body">Conversation traces | agent plans</text>
+  <rect x="70" y="625" width="280" height="115" rx="12" fill="#152032" stroke="#6c8eac" class="box"/><text x="100" y="665" class="node-title">Redis optional</text><text x="100" y="693" class="node-body">Session cache, rate limits,</text><text x="100" y="715" class="node-body">background task coordination</text>
+
+  <text x="410" y="430" class="section">SNOWFLAKE GOVERNED DATA PLANE</text>
+  <rect x="410" y="450" width="310" height="290" rx="14" fill="#101b31" stroke="#4ebeea" class="box" filter="url(#glowCyan)"/>
+  <text x="440" y="490" class="node-title">SUPPLY_CHAIN_ONTOLOGY</text>
+  <text x="440" y="525" class="pill" fill="#8ad8ff">RAW_*  →  STG_*  →  CORE</text>
+  <text x="440" y="558" class="node-body">RAW: source-preserving loads</text><text x="440" y="582" class="node-body">STG: typed source adapters</text><text x="440" y="606" class="node-body">CORE: canonical entities and facts</text>
+  <text x="440" y="644" class="pill" fill="#75ffd0">GOVERNANCE</text><text x="440" y="668" class="node-body">Ontology | metrics | join paths</text><text x="440" y="692" class="node-body">Date / currency / access policies</text><text x="440" y="716" class="node-body">Versioned approvals</text>
+
+  <text x="780" y="710" class="section">SEMANTIC EXECUTION AND AUDIT</text>
+  <rect x="780" y="730" width="400" height="150" rx="14" fill="#251f30" stroke="url(#orange)" class="box" filter="url(#glowViolet)"/>
+  <text x="810" y="770" class="node-title">Semantic Views + Execution Gate</text><text x="810" y="798" class="node-body">SUPPLIER_PERFORMANCE | INVENTORY_COVERAGE</text><text x="810" y="822" class="node-body">ORDER_FULFILLMENT | LANDED_COST | CUSTOMER_RISK</text><text x="810" y="850" class="node-body">AGENT.EXECUTE_GOVERNED_QUERY(plan_id)</text>
+  <rect x="1240" y="730" width="290" height="150" rx="14" fill="#16273b" stroke="#9caec3" class="box"/><text x="1270" y="770" class="node-title">AUDIT + Lineage</text><text x="1270" y="798" class="node-body">Agent run | SQL | validation</text><text x="1270" y="822" class="node-body">Evidence | policy decision</text><text x="1270" y="846" class="node-body">Query tags | deterministic replay</text>
+
+  <text x="70" y="800" class="section">SOURCE DATA FAMILIES</text>
+  <rect x="70" y="820" width="610" height="60" rx="10" fill="#121a2a" stroke="#697e9a"/><text x="95" y="857" class="node-body">Inventory • Procurement • Olist • DataCo • Shipment Pricing • NIST</text>
+  <text x="70" y="922" class="tiny">SECURITY BOUNDARY: Agents never query RAW_* directly. Snowflake semantic views and registry versions control every numeric answer.</text>
+
+  <path d="M350 297H410" fill="none" stroke="#d783ff" stroke-width="3" marker-end="url(#arrowViolet)"/><path d="M720 297H780" fill="none" stroke="#55e8ef" stroke-width="3" marker-end="url(#arrowCyan)"/>
+  <path d="M1180 297H1240" fill="none" stroke="#d783ff" stroke-width="3" marker-end="url(#arrowViolet)"/><path d="M1240 470H1180" fill="none" stroke="#55e8ef" stroke-width="3" marker-end="url(#arrowCyan)"/>
+  <path d="M565 370V450" fill="none" stroke="#55e8ef" stroke-width="3" marker-end="url(#arrowCyan)"/><path d="M210 450V370" fill="none" stroke="#6dffc5" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <path d="M350 525H410" fill="none" stroke="#6dffc5" stroke-width="3" marker-end="url(#arrowGreen)"/><path d="M565 740V730" fill="none" stroke="#ffbf71" stroke-width="3" marker-end="url(#arrowCyan)"/>
+  <path d="M780 805H720" fill="none" stroke="#ffbf71" stroke-width="3" marker-end="url(#arrowCyan)"/><path d="M1180 805H1240" fill="none" stroke="#d783ff" stroke-width="3" marker-end="url(#arrowViolet)"/>
+  <path d="M1385 565V540" fill="none" stroke="#9caec3" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowCyan)"/><path d="M350 850H410" fill="none" stroke="#6dffc5" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <path d="M930 370V385" fill="none" stroke="#6dffc5" stroke-width="2" stroke-dasharray="5 5"/><path d="M1055 655V730" fill="none" stroke="#ffbf71" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowCyan)"/>
+</svg>
