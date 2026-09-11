@@ -17,10 +17,15 @@ class GovernedOrchestrator:
     def handle(self, question: str, persona: str) -> dict:
         answer = self.agent.handle(question, persona)
         if answer.status == "EXECUTE":
-            execution = self.executor.execute(answer, persona)
-            answer.validation = execution.get("validation", answer.validation)
-            answer.query_plan_id = execution.get("query_plan_id")
-            if execution.get("status") == "EXECUTE":
-                answer.result = execution.get("result")
-                answer.message = "Governed query executed and validated."
+            try:
+                execution = self.executor.execute(answer, persona)
+                answer.validation = execution.get("validation", answer.validation)
+                answer.query_plan_id = execution.get("query_plan_id")
+                if execution.get("status") == "EXECUTE":
+                    answer.result = execution.get("result")
+                    answer.message = "Governed query executed and validated."
+            except Exception as error:
+                answer.status = "REFUSE"
+                answer.message = f"Execution failed: {error}"
+                answer.validation = {"status": "EXECUTION_ERROR", "raw_table_access": False}
         return answer.__dict__
